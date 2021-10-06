@@ -1,0 +1,15 @@
+<p style="text-align: center"><b>2. The student list task</b></p>
+<div class="container">
+  <div class="group">
+    <input type="text" [(ngModel)]="newStudent"/>
+    <button type="button" (click)="addStudent()">Add Student & His/her mark</button>
+  </div>
+  <div class="student" *ngFor="let student of students">
+    <input type="checkbox">
+    <span>{{ student.name }}, {{student.mark}}</span> <br>
+  </div>
+  <span style="color: red">{{message}}</span>
+  <div class="group">
+    <button type="button" (click)="removeStudent()">Remove <5</button>
+  </div>
+</div>
